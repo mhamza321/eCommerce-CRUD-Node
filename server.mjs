@@ -93,7 +93,7 @@ app.post("/login", (req, res) => {
                                 maxAge: 86_400_000,
                                 httpOnly: true // https only cookies are the most secure one
                             });
-
+                            console.log("Cookie in login", res.cookie.Token)
                             res.send({
                                 message: "login successful",
                                 profile: {
