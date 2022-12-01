@@ -91,7 +91,7 @@ app.post("/login", (req, res) => {
 
                             res.cookie('Token', token, {
                                 maxAge: 86_400_000,
-                                httpOnly: true // https only cookies are the most secure one
+                                httpOnly: false // https only cookies are the most secure one
                             });
 
                             res.send({
@@ -242,7 +242,6 @@ app.get("/profile", async (req, res) => {
         res.status(500).send({ message: "error getting users" });
     }
 })
-
 
 app.get("/products", async (req, res) => {
     try {
