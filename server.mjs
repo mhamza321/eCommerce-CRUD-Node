@@ -8,7 +8,7 @@ import { stringToHash, varifyHash } from "bcrypt-inzi"
 
 const dbURI = process.env.MONGODBURI || "mongodb+srv://mhamza:hamza.123@cluster0.yy24d35.mongodb.net/eCommDb?retryWrites=true&w=majority";
 const SECRET = process.env.SECRET || "topsecret";
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5001; // port
 
 
 const app = express();
