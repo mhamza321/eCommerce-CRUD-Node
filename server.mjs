@@ -15,11 +15,11 @@ const app = express();
 app.use(express.json()); // parsing body
 app.use(cookieParser()); // parsing cookies
 
-
-app.use(cors({
-    origin: ['http://localhost:3000', 'https://ecomm-c7847.web.app', "*"],
-    credentials: true
-}));
+app.use(cors());
+// app.use(cors({
+//     origin: ['http://localhost:3000', 'https://ecomm-c7847.web.app', "*"],
+//     credentials: true
+// }));
 
 
 
