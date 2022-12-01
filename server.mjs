@@ -17,7 +17,7 @@ app.use(cookieParser()); // parsing cookies
 
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://ecomm-c7847.web.app/', "*"],
+    origin: ['http://localhost:3000', 'https://ecomm-c7847.web.app', "*"],
     credentials: true
 }));
 
